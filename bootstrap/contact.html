@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .h1 {
+            font-size: 36px;
+            color: #cb9cf7;
+        }
+        
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            text-align: center;
+        }
+
+        .navbar a {
+            display: inline-block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <a href="contact.html">Home</a>
+        <a href="display.php">Display</a>
+    </div>
+
+    <form action="contact.php" method="post">
+        <div class="contain">
+            <p class="h1">Contact Form</p>
+            <hr>
+            <label for="name">Name:</label><br>
+            <input type="text" name="name" id="name" required><br>
+            <label for="address">Address:</label><br>
+            <input type="text" name="address" id="address" required><br>
+            <label for="contact">Contact No:</label><br>
+            <input type="text" name="contact" id="contact" required><br>
+            <label for="msg">Message:</label><br>
+            <textarea name="msg" id="msg" placeholder="Write something.." required></textarea><br><br>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
